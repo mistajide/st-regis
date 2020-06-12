@@ -1,36 +1,35 @@
-* {
+
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
- 
 body {
     font-style: normal;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #000000;
 }
-
 /* Header */
-
 .navbar-brand {
     margin-top: auto;
 }
-
 .header-container {
     width: 100%;
-    background: url(background.png) rgba(0, 0, 0, 0.3);
-    color: #ffffff;
+    color: #FFFFFF;
 }
-
+#top-img {
+    position: absolute;
+    filter: brightness(50%);
+    z-index: -1;
+  }
 .link{
-    color: #ffffff;
+    color: #FFFFFF;
     font-family: Proxima Nova;
     font-weight: bold;
     font-size: 1rem;
     line-height: 34px;
     text-align: center;
+    z-index: 1;
 }
-
 .book-link {
     font-family: Proxima Nova;
     font-weight: bold;
@@ -45,19 +44,17 @@ body {
     padding: 0 15px;
     margin-right: 0;
 }
-
 .first-heading{
     font-family: Proxima Nova;
     font-weight: bold;
     font-size: 4rem;
     line-height: 78px;
 }
-
 .first-paragraph{
     font-weight: normal;
     font-size: 1.25rem;
     margin: 0;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 .cont{
     border: 1px solid #FFFFFF;
@@ -68,8 +65,27 @@ body {
     color: #FFFFFF;
     padding: 20px;
     text-align: center;
+    z-index: 1;
 }
-
+p {
+    font-family: Proxima Nova;
+    font-weight: normal;
+    font-size: 1.025rem;
+    line-height: 22px;
+    margin: 28px 0;
+}
+.m {
+    margin: 120px;
+    width: 100%;
+}
+li {
+    display: inline;
+    list-style: none;
+    margin: 25px;
+}
+a {
+    color: white;
+}
 
 /* .logo {
     align-content: center;
@@ -153,6 +169,7 @@ footer {
     font-weight: normal;
     font-size: 2.025em;
     line-height: 56px;
+    padding: 0 12%;
 }
 
 .beneath {
@@ -199,6 +216,7 @@ input {
     font-size: 4rem;
     line-height: 75px;
     text-align: center;
+    margin-left: 15%;
 }
 
 #above {
@@ -228,16 +246,6 @@ input {
     text-align: center;
     padding: 40px;
     margin-top: 30px;
-}
-
-li {
-    display: inline;
-    list-style: none;
-    margin: 25px;
-}
-
-a {
-    color: white;
 }
 
 @media only screen and (max-width: 600px) {
