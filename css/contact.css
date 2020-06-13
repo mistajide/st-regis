@@ -1,0 +1,25 @@
+.third-division {
+    min-height: 400px;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.third-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    grid-gap: 50px;
+}
+
+.third-division img {
+    width: 100%;
+}
+
+@media only screen and (max-width:800px) {
+    .third-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(300px, auto);
+        grid-gap: 50px;
+    }
+}
