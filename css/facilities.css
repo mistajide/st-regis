@@ -40,3 +40,45 @@ body {
   top: 0;
   background: rgba(0, 0, 0, 0.3);
 }
+
+
+.facilities {
+  width: 100%;
+  min-height: 500px;
+}
+
+.fac-write .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row-fac {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  grid-auto-rows: minmax(300px, auto);
+  padding: 20px 0;
+
+}
+
+.col-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row-fac img {
+  width: 100%;
+  height: 500px;
+}
+
+@media only screen and (max-width:800px) {
+  .row-fac {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: minmax(200px, auto);
+    padding: 20px 0;
+
+  }
+}
