@@ -15,7 +15,7 @@ body {
     position: absolute;
     filter: brightness(50%);
     z-index: -1;
-    width: 100%;
+    width: 1440px;
     height: auto;
   }
 .nav{
@@ -79,13 +79,13 @@ body {
     font-weight: 500;
 }
 .one,.two, .three{
-    padding: 0px 80px 0px 80px;
+    padding: 0px 80px 5px 80px;
     width: auto;
 }
 .figs{
     text-align: center;
      width: 100%;
-     margin:0px 10px 0px 40px; 
+     margin:0px 10px 30px 40px; 
  }
  figcaption{
      font-size: 24px;
@@ -100,6 +100,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
+    padding-top: 10%;
     padding-bottom: 20px;
 }
 /*all inputs*/
@@ -115,14 +116,16 @@ input[type=text],input[type=email],input[type=number]{
     border-bottom: 1px solid hsl(162, 17%, 51%);
     background-color: #f8f8f8;
     resize: none;
-    box-shadow: none; 
-  }
-  #mail1, #Name, #phone {
+    box-shadow: none;
+    font-family: Proxima Nova;
+    font-weight: normal;
+    font-size: 1.025em; 
+}
+#mail1, #Name, #phone {
     box-shadow: none;
   }
   .first-form{
-    padding: 0px 5% 0px 5%;
-    
+    padding: 0px 5% 0px 5%;    
 }
   #first-btn{
     float: right;
@@ -132,9 +135,9 @@ input[type=text],input[type=email],input[type=number]{
     height: 60px;
     font-weight: bold;
     font-size: 21px;
-  }
+}
   /*map*/
-  #img-map{
+#img-map{
       width: 1440px;
       height: 668px;
       margin-top: 160px;
@@ -157,7 +160,7 @@ input[type=text],input[type=email],input[type=number]{
 .second-form{
     text-align: center; 
     width: 100%;
-    padding-bottom: 10%;  
+    padding-bottom: 5%;  
 }
 #second-btn{
     background-color: #155A45;
@@ -192,19 +195,19 @@ input[type=text],input[type=email],input[type=number]{
 .footer{
     background-color: #155A45;
     height: 200px;
-    font-family: Proxima Nova;
-    font-style: normal;
-    font-weight: bold;
     font-size: 1.025em;
+    position: relative;
 }
 
 .footer-nav{
     font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 40%;
     width: 100%; /*without this text wont be align center*/
     text-align: center;
     font-size: 18px;
     font-weight: 300;
-    padding-top: 60px;
 }
 .link{
     color: #fff;
