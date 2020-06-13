@@ -9,6 +9,10 @@
     --white: #FFFFFF;
 }
 
+.nav-mobile {
+    display: none;
+}
+
 body {
 
     font-family: Proxima Nova;
@@ -91,6 +95,11 @@ a {
 
     font-size: 21px;
     text-align: center;
+}
+
+.cont:last-child {
+    background: var(--green);
+    cursor: pointer;
 }
 
 p {
@@ -520,6 +529,14 @@ h1 {
 }
 
 @media only screen and (max-width:500px) {
+    .nav-mobile {
+        display: block;
+    }
+
+    .navb-logo {
+        display: none;
+    }
+
     .menu {
         display: flex;
         flex-direction: column;

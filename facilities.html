@@ -15,9 +15,13 @@
 <body>
   <header class="container-fluid header-container">
     <nav class="navbar navbar-expand-lg navbar-light container">
+      <li class="nav-item navbar-brand nav-mobile">
+        <a class="link" href="index.html"><img src="st-regis-white 1.png" alt="brand-image" id="brand-img" /></a>
+      </li>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="float-right navbar-toggler-icon"></span>
+
       </button>
       <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: space-evenly;">
         <ul class="navbar-nav">
@@ -28,9 +32,9 @@
             <a class="link" href="facilities.html">FACILITIES</a>
           </li>
           <li class="nav-item">
-            <a class="link" href="index.html">GALLERY</a>
+            <a class="link" href="#gallery">GALLERY</a>
           </li>
-          <li class="nav-item navbar-brand">
+          <li class="nav-item navbar-brand navb-logo">
             <a class="link" href="index.html"><img src="st-regis-white 1.png" alt="brand-image" id="brand-img" /></a>
           </li>
           <li class="nav-item">
@@ -40,8 +44,8 @@
             <a class="link" href="contact.html">CONTACT</a>
           </li>
           <li class="nav-item">
-            <input type="button" value="BOOK NOW" class="book-link" id="btn-link"
-              onclick="document.location = 'default.asp'" />
+            <input type="button" value="BOOK NOW" class="book-link" id="btn-link" data-toggle="modal"
+              data-target="#inquiryModal" />
           </li>
         </ul>
       </div>
@@ -184,7 +188,48 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+  <!-- Inquiry Modal -->
+  <div class="modal fade" id="inquiryModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="inquiryModalLabel">Book Now</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="property_name" class="col-form-label">Property:</label>
+              <input type="text" name="listing" class="form-control" value="Book Suite" disabled>
+            </div>
+            <div class="form-group">
+              <label for="name" class="col-form-label">Name:</label>
+              <input type="text" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="col-form-label">Phone:</label>
+              <input type="text" name="phone" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="message" class="col-form-label">Message:</label>
+              <textarea name="message" class="form-control"></textarea>
+            </div>
+            <hr>
+            <input type="submit" value="Send" class="btn btn-block btn-secondary">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
+
 
 </html>
 
