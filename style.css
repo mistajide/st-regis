@@ -155,6 +155,7 @@ h1 {
 
 #gallery {
     background-color: #155A45;
+    width: 100%;
     padding: 30px;
     text-align: center;
 }
@@ -250,4 +251,5 @@ input {
     text-align: center;
     padding: 40px;
     margin-top: 30px;
+    width: 100%;
 }
